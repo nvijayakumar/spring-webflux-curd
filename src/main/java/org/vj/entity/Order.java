@@ -31,4 +31,8 @@ public class Order {
 	@Column("placed_date")
 	private LocalDateTime placedDate;
 
+	public Order(Double amount, LocalDateTime placedDate) {
+		this.amount = amount;
+		this.placedDate = placedDate;
+	}
 }
